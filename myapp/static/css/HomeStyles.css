@@ -1,0 +1,87 @@
+.upper-part{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    border-bottom: 1px solid;
+    height: 80px;
+}
+.logo-image{
+    padding-left: 50px;
+}
+
+.search-form{
+    display: flex;
+    align-items: center;
+}
+
+.search-box{
+    width: 500px;
+    height: 40px;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+    border: 1px solid;
+    box-shadow: rgba(36, 39, 44, 0.1) 0px 6px 10px 0px;
+    padding-left: 30px;
+    box-sizing: border-box;
+}
+.dropdown-sort{
+    height: 40px;
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+    width: 70px;
+    box-shadow: rgba(36, 39, 44, 0.1) 0px 6px 10px 0px;
+    cursor: pointer;
+}
+.select-language{
+    border: none;
+    cursor: pointer;
+}
+
+.sort-option{
+    background-color: white;
+    text-align: center;
+    font-size: 12px;
+    padding-top: 16px;
+}
+
+.option-language{
+    background-color: white;
+    font-size: 15px;
+    text-align: center;
+    padding: 10px;
+    border: none;
+}
+
+.input-container{
+    position: relative;
+    width: 100%;
+}
+
+.homesearch{
+    position: absolute;
+    top: 30%;
+    left: 10px;
+    color: blue;
+}
+
+.login-div{
+    padding-right: 50px;
+}
+
+.login-div a {
+    text-decoration: none;
+    color: black;
+}
+
+.login-div a:hover{
+    text-decoration: underline;
+    color: #0056b3;
+}
+.login-div .fa-user{
+    margin-right: 5px;
+}
+
+
+
+

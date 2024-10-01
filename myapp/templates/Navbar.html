@@ -1,0 +1,57 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Dekho</title>
+    <link rel="stylesheet" href="{% static 'css/HomeStyles.css' %}">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+</head>
+<body class="homepage">
+    <div class="container">
+        <div class="header">
+            <div class="upper-part">
+                <div class="logo">
+                    <a>
+                        <img class="logo-image" src="https://stimg.cardekho.com/pwa/img/carDekho-newLogo.svg">
+                    </a>
+                </div>
+                <div>
+                    <form class="search-form">
+                        <div>
+                            <select class="dropdown-sort" name="" id="">
+                                <option class="sort-option" value="">All</option>
+                                <option class="sort-option" value="">New</option>
+                                <option class="sort-option" value="">Used</option>
+                            </select>
+                        </div>
+                        <div class="input-container">
+                            <span class="homesearch fa fa-search"></span>
+                            <input class="search-box" placeholder="Search" type="search" >
+                        </div>
+                    </form>
+                    
+                </div>
+                <div class="dropdown-language">
+                    <select class="select-language">
+                        <option class="option-language" value="">English</option>
+                        <option class="option-language" value="">Hindi</option>
+                        <option class="option-language" value="">Malayalam</option>
+                    </select>
+                </div>
+                <div class="login-div">
+                    <span class="fa fa-user"></span>
+                    <a href="{% url 'login' %}">Login/Register</a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    
+</body>
+</html>
+{% block content %}
+{% endblock %}
