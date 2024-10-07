@@ -1,0 +1,28 @@
+{% extends 'navbar.html' %}
+{% block content %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/SignUpPage.css' %}">
+<div class="centre-container">
+    <div class="form-container">
+        <h1>Sign Up</h1>
+        <form action="">
+            <div class="signup-input-container">
+                <label for="name">Name:</label>
+                <input type="text" name="name" id=""><br>
+                <label for="email">E-mail Id:</label>
+                <input type="email" name="email" id=""><br>
+                <label for="username">Username:</label>
+                <input type="text" name="username" id=""><br>
+                <label for="password">Password:</label>
+                <input type="password" name="password" id=""><br>
+                <label for="phone">Mobile No:</label>
+                <input type="number" name="phone" id="">
+            </div>
+            <div class="sign-up-button">
+                <button>Sign Up</button>
+            </div>
+            
+        </form>
+    </div>
+</div>
+{% endblock %}

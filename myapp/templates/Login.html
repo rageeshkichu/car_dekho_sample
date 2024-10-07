@@ -1,11 +1,34 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login/Sign Up</title>
-</head>
-<body>
-    Login page
-</body>
-</html>
+{% extends 'navbar.html' %}
+{% block content %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/LoginStyles.css' %}">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<div class="centre-div">
+    <div class="loginpage-div">
+        <div class="login-image">
+            <img src="https://stimg.cardekho.com/pwa/img/my-account/pic/login-banner-new.svg" alt="">
+        </div>
+        <div class="login-form">
+            <h1>Login</h1>
+            <form action="">
+                <div class="input-box-username">
+                    <span class="fas fa-user-lock"></span>
+                    <input placeholder="Enter username" type="text" name="username" id="">
+                </div>
+                <div class="input-box-password">
+                    <span class="fas fa-key"></span>
+                    <input placeholder="Enter Password" type="password" name="password" id="">
+                </div>
+                <div class="login-button">
+                    <button>Login</button>
+                </div>
+                <p>Not a member <a href="{% url 'SignUpPage' %}">Sign Up Now</a></p>
+            </form>
+            
+        </div>
+    </div>
+</div> 
+
+
+
+{% endblock %}
